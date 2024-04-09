@@ -152,9 +152,9 @@ static struct { // LINEAR
 } imx415_mipi_linear[] = {
     { LINEAR_RES_1, { 3840, 2160, 3, 20 }, { 0, 0, 3840, 2160 }, { "3840x2160@20fps" } },
     { LINEAR_RES_2, { 3200, 1800, 3, 30 }, { 0, 0, 3840, 2160 }, { "3200x1800@30fps" } },
-    { LINEAR_RES_3, { 2240, 1260, 3, 60 }, { 0, 0, 2952, 1656 }, { "2952x1656@60fps" } },
+    { LINEAR_RES_3, { 2240, 1264, 3, 60 }, { 0, 0, 2952, 1656 }, { "2952x1656@60fps" } },
     { LINEAR_RES_4, { 1920, 1080, 3, 90 }, { 0, 0, 1920, 1080 }, { "1920x1080@90fps" } },
-    { LINEAR_RES_5, { 1448, 812, 3, 120 }, { 0, 0, 1448,  812 }, { "1448x812@120fps" } },
+    { LINEAR_RES_5, { 1456, 816, 3, 120 }, { 0, 0, 1456, 816 }, { "1456x816@120fps" } },
 };
 
 static struct { // HDR
@@ -786,7 +786,7 @@ const static I2C_ARRAY Sensor_1m_120fps_init_table_4lane_linear[] = {
     { 0x3033, 0x05 }, // SYS_MODE (891Mbps)
     { 0x3040, 0xD4 }, // PIX_HST (start hcrop 0x288) - 468
     { 0x3041, 0x01 }, //
-    { 0x3042, 0x70 }, // PIX_HWIDTH (window hcrop 0xA08) - 2928
+    { 0x3042, 0x88 }, // PIX_HWIDTH (window hcrop 0xA08) - 2928
     { 0x3043, 0x0B }, //
     { 0x3044, 0x24 }, // PIX_VST (start vcrop 0x2F0) - 548
     { 0x3045, 0x02 }, //
